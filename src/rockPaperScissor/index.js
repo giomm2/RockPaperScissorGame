@@ -36,13 +36,13 @@ const ComputerSelection = () => {
   random = random + 1; 
   switch(random){
     case 1:
-      imgCPU.src = './public/assets/images/rock-right.png';
+      imgCPU.src = 'assets/images/rock-right.png';
     break;
     case 2:
-      imgCPU.src = './public/assets/images/paper-right.png';
+      imgCPU.src = 'assets/images/paper-right.png';
     break;
     case 3:
-      imgCPU.src = './public/assets/images/scissor-right.png';
+      imgCPU.src = 'assets/images/scissor-right.png';
     break;
   }
   
@@ -50,8 +50,8 @@ const ComputerSelection = () => {
 };
 
 const Restart = () => {
-  imgCPU.src = './public/assets/images/rock-right.png';
-  imgUser.src = './public/assets/images/rock.png';
+  imgCPU.src = 'assets/images/rock-right.png';
+  imgUser.src = 'assets/images/rock.png';
   imgUser.classList.remove('paused');
   imgCPU.classList.remove('paused');
   contentResult.classList.add('hide');
@@ -59,17 +59,17 @@ const Restart = () => {
 };
 
 imgRock.addEventListener('click', () => {
-  imgUser.src = './public/assets/images/rock.png';
+  imgUser.src = 'assets/images/rock.png';
   Winner(1, ComputerSelection());
 });
 
 imgPaper.addEventListener('click', () => {
-  imgUser.src = './public/assets/images/paper.png';
+  imgUser.src = 'assets/images/paper.png';
   Winner(2, ComputerSelection());
 });
 
 imgScissor.addEventListener('click', () => {
-  imgUser.src = './public/assets/images/scissor.png';
+  imgUser.src = 'assets/images/scissor.png';
   Winner(3, ComputerSelection());
 });
 

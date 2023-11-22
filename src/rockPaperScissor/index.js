@@ -5,7 +5,7 @@ const winOptions = {
   '-2': 'Player',
   '1' : 'Player',
   '2' : 'CPU',
-}
+};
 
 const imgRock = document.querySelector('#img-rock'),
       imgPaper = document.querySelector('#img-paper'),
@@ -29,7 +29,7 @@ const Winner = (userSelection, cpuSelection) => {
   contentPlay.classList.add('hide');
   contentResult.classList.remove('hide');
   titleWinner.innerHTML = TheWinner;
-}
+};
 
 const ComputerSelection = () => {
   let random = Math.floor(Math.random() * selections.length);
@@ -47,7 +47,7 @@ const ComputerSelection = () => {
   }
   
   return random;
-}
+};
 
 const Restart = () => {
   imgCPU.src = './public/assets/images/rock-right.png';
@@ -56,7 +56,7 @@ const Restart = () => {
   imgCPU.classList.remove('paused');
   contentResult.classList.add('hide');
   contentPlay.classList.remove('hide');
-}
+};
 
 imgRock.addEventListener('click', () => {
   imgUser.src = './public/assets/images/rock.png';

@@ -1,2 +1,2 @@
-import './src/rockPaperScissor/css/index.css'
-import './src/rockPaperScissor/index'
+import './src/rockpaperscissor/css/index.css'
+import './src/rockpaperscissor/index'
